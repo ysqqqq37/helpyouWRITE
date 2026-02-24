@@ -14,24 +14,11 @@
     <main class="garden-shell">
       <header class="hero-card soft-card">
         <h1>inspiration-garden</h1>
-        <p>写作卡住时，也能在这里长出新的段落与心跳。</p>
+        <p>先选卡住的阶段，再进入专属解卡页，让注意力只落在眼前这一段故事。</p>
       </header>
 
-      <section class="mode-switch soft-card" aria-label="模式切换">
-        <button class="mode-tab is-active" data-mode="start">🌸 起步模式</button>
-        <button class="mode-tab" data-mode="push">🌷 推进模式</button>
-        <button class="mode-tab" data-mode="restart">🌙 重启模式</button>
-      </section>
-
-      <section class="input-panel soft-card" id="inputPanel"></section>
-
-      <section class="result-panel soft-card">
-        <div class="result-head">
-          <h2>灵感花园回响</h2>
-          <button id="copyBtn" class="copy-btn">复制结果</button>
-        </div>
-        <pre id="resultBox">在上方填写内容后，点下按钮，让故事继续发芽吧 ✨</pre>
-      </section>
+      <section id="stageGate" class="stage-gate soft-card" aria-label="阶段选择"></section>
+      <section id="modePage" class="mode-page"></section>
     </main>
 
     <script src="app.js"></script>
